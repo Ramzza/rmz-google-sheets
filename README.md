@@ -9,12 +9,12 @@ A small command-line tool for reading and editing Google Sheets ranges.
    `GOOGLE_APPLICATION_CREDENTIALS` to its JSON key file and share the target
    spreadsheet with the service account's email address. Alternatively, use
    `gcloud auth application-default login`.
-3. Install the project:
+3. Install dependencies and build the CLI:
 
    ```sh
-   python -m venv .venv
-   source .venv/bin/activate
-   pip install -e .
+   npm install
+   npm run build
+   npm link
    ```
 
 ## Usage
@@ -39,8 +39,8 @@ table. The tool does not store credentials or spreadsheet contents.
 
 ## Development
 
-Run the standard-library unit tests with:
+Run the unit tests with:
 
 ```sh
-python -m unittest discover -s tests
+npm test
 ```
