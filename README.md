@@ -2,6 +2,8 @@
 
 A small command-line tool for reading and editing Google Sheets ranges.
 
+See [PRD.md](PRD.md) for the product requirements and their test mappings.
+
 ## Setup
 
 1. Enable the Google Sheets API in your Google Cloud project.
